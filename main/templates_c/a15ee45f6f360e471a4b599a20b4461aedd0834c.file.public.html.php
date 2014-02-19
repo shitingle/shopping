@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2014-02-18 07:45:35
+<?php /* Smarty version Smarty-3.1.16, created on 2014-02-18 10:11:59
          compiled from "main\templates\public.html" */ ?>
 <?php /*%%SmartyHeaderCode:93353030f148ee7f3-90769483%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'a15ee45f6f360e471a4b599a20b4461aedd0834c' => 
     array (
       0 => 'main\\templates\\public.html',
-      1 => 1392709534,
+      1 => 1392718318,
       2 => 'file',
     ),
   ),
@@ -26,6 +26,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <title>Insert title here</title>
 </head>
 <body>
-dasddd
+<div style="height:200px">
+<br><br>
+<div>网站公告</div><br>
+<div><a href="">欢迎新老朋友光临</a></div>
+<div><a href="">买100son</a></div>
+<div><a href="">新增项目</a></div>
+</div>
 </body>
 </html><?php }} ?>

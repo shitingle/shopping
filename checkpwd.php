@@ -8,7 +8,11 @@ $sql="select * from tb_user where name='{$name}' and password='{$pwd}'";
 $num=$db->fetch($sql);
 if($num){
 	$_SESSION['member']=$name;
-	echo "<script>this.location.replace('http://localhost/shopping/info.php');</script>";
+	$member=$_SESSION['member'];
+	echo "欢迎您:{$member}<br>
+	        <a href='',id='info'>会员中心</a><br>
+			<a href=''>查看购物车</a><br>
+		    <a href=''>安全离开</a>";
 }else{
-	echo "��½ʧ��";
+	echo "��½ʧ��";
 }

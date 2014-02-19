@@ -3,8 +3,8 @@ function checkuname(){
 	if(uname==""){
 		document.getElementById("tname").innerHTML="<span style='color:red'>用户名不能为空</span>"
 	}else{
-	url="http://localhost/shopping/rc_name.php?name="+uname;
-	ajax(url,"tname");}
+	    url="http://localhost/shopping/rc_name.php?name="+uname;
+	    ajax(url,"tname");}
 }
 
 function checkpwd(){
@@ -12,7 +12,7 @@ function checkpwd(){
 	if(pwd==""){
 		document.getElementById("tpwd").innerHTML="<span style='color:red'>密码不能为空</span>"
 	}else{
-		document.getElementById("tpwd").innerHTML="";
+		document.getElementById("tpwd").innerHTML='&nbsp';
 	}
 }
 
@@ -22,6 +22,13 @@ function checkverify(){
     ajax(url,"tverify");
 }
 
+function check(){
+	var pwd=document.getElementById("upwd").value;
+	var uname=document.getElementById("uname").value;
+	url="http://localhost/shopping/checkpwd.php?uname="+uname+"&pwd="+pwd;
+	ajax(url,"check");
+	
+}
 function ajax(url,div){
 	var xmlhttp;
 	if (window.XMLHttpRequest)

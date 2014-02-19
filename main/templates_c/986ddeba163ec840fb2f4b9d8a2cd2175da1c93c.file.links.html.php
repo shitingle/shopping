@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2014-02-18 07:44:58
+<?php /* Smarty version Smarty-3.1.16, created on 2014-02-18 10:14:07
          compiled from "main\templates\links.html" */ ?>
 <?php /*%%SmartyHeaderCode:2284453030f50334129-80283550%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '986ddeba163ec840fb2f4b9d8a2cd2175da1c93c' => 
     array (
       0 => 'main\\templates\\links.html',
-      1 => 1392709497,
+      1 => 1392718445,
       2 => 'file',
     ),
   ),
@@ -25,7 +25,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
-<body>
-adssssssss
+<h3>客服热线</h3>
+<div>400-675-1066</div>
+<br>
+<div>友情链接</div>
 </body>
 </html><?php }} ?>

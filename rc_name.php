@@ -6,5 +6,5 @@ $num=$db->fetch($sql);
 if($num==null){
 	echo "用户名输入错误";
 }else{
-	echo "";
+	echo "&nbsp";
 }
