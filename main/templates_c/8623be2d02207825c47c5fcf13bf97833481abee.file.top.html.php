@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2014-02-18 10:15:47
+<?php /* Smarty version Smarty-3.1.16, created on 2014-02-19 03:28:06
          compiled from "main\templates\top.html" */ ?>
 <?php /*%%SmartyHeaderCode:21740530310591f0188-60944503%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '8623be2d02207825c47c5fcf13bf97833481abee' => 
     array (
       0 => 'main\\templates\\top.html',
-      1 => 1392718546,
+      1 => 1392780450,
       2 => 'file',
     ),
   ),
@@ -24,8 +24,19 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+<link href="css/top.css"  type="text/css" rel="stylesheet">  
+<script type="text/javascript" src="js/top.js"></script>
+
 </head>
+
 <body>
+
 <h1 align="center">新年购物</h1>
+<ul>
+<li><a>首页</a></li>
+<li><a>最新商品</a></li>
+<li><a>推荐商品</a></li>
+<li><a>热门商品</a></li>
+<li><a>订单查询</a></li></ul>
 </body>
 </html><?php }} ?>

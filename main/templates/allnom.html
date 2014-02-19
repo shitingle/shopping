@@ -5,32 +5,34 @@
 <title>Insert title here</title>
 </head>
 <body>
-<table width="636" border="0" align="center" cellspacing="0" cellpadding="0">
+<table width="636" border="1" align="center" cellspacing="0" cellpadding="0">
 <tr>
-<td height="33" align="left" valign="middle" background="pink">
-</td>
+<td height="33" align="left" valign="middle" ></td>
 </tr>
 <tr>
-<td height="132" align="left" valign="middle">{section name=nom_id loop=$nomarr}</td>
-<td>商品名称:{$name}</td>
-<td>商品类别:{$class}</td>
-<td>商品型号:{$model}</td>
+<td height="132" align="left" valign="middle">
+<table width="636" height="134" border="1" cellspacing="0" cellpadding="0">
+<tr>
+<td width="145" rowspan="5" align="center" valign="middle></td>
+<td height="35">商品名称:{$name}</td>
+<td width="156" height="35">商品类别:{$class}</td>
+<td width="157">商品型号:{$model}</td>
 </tr>
 <tr>
-<td>商品品牌:{$brand}</td>
-<td>商品产地:{$area}</td>
-</tr>
+<td height="23">商品品牌:{$brand}</td>
+<td height="23" colspan="2">商品产地:{$area}</td></tr>
 <tr>
-<td>剩余数量:{$stocks}</td>
-<td>销售数量:{$sell}</td>
-</tr>
+<td width="178" height="32">剩余数量:{$stocks}</td>
+<td colspan="2">销售数量:{$sell}</td></tr>
 <tr>
-<td>市场价:{$price}</td>
-<td>上市日期:{$addtime}</td>
+<td height="23">市场价:{$m_price}</td>
+<td height="23">上市日期:{$addtime}</td></tr>
+<tr><td height="30">会员价格:{$v_price}</td>
+<td height="30" colspan="2" align="center" valign="middle">
+<input id="allshow" name="allshow" type="button" value="show" class="show info" onclick="openshowcommo('{$id}')">
+<input id="buy" name="buy" type="button" value="buy" class="buy" onclick="buycommo('{$id}')"></td>
 </tr>
-<tr>
-<td>会员价格:{$v_price}</td></tr>
-
-</table>
+</table></td>
+</tr></table>
 </body>
 </html>
