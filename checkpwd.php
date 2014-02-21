@@ -14,5 +14,5 @@ if($num){
 			<a href=''>查看购物车</a><br>
 		    <a href=''>安全离开</a>";
 }else{
-	echo "��½ʧ��";
+	echo "1";
 }

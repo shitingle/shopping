@@ -1,13 +1,13 @@
 <?php
 header("Content-type:text/html;charset=UTF-8");
+require_once 'comm/opmysql.php';
 require_once 'system.smarty.inc.php';
 if(isset($_GET['page'])){
 	$page=$_GET['page'];
 }else{
 	$page="";
 }
-$smarty->assign("hello","wqewq");
-
+var_dump($page);
 switch($page){
 	case "hyzx":
 		$smarty->assign("admin_phtml","member.html");
@@ -25,6 +25,7 @@ switch($page){
     	$smarty->assign("admin_phtml","allhot.html");
     	break;
     case "shopcar":
+    	include_once 'myshopcar.php';
     	$smarty->assign("admin_phtml","myshopcar.html");
     	break;
     case "settle":
@@ -34,6 +35,7 @@ switch($page){
     	$smarty->assign("admin_phtml","queryform.html");
         break;
     default:
+       include_once 'newhot.php';
     	$smarty->assign("admin_phtml","newhot.html");
     	break;		
 	    

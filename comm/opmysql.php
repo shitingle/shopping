@@ -16,30 +16,36 @@ class db{
 		$this->dsn="$dbms:host=$this->host;dbname=$this->dbName";
 		$this->connect();
 	}
-	function connect(){
+public	function connect(){
 		$this->pdo=new PDO($this->dsn,$this->name,$this->pwd);
+		$this->pdo->query("set names utf8");
 	}
-	function query($sql){
+public	function query($sql){
 		$this->connect();
 		$this->result=$this->pdo->prepare($sql);
 		$this->result->execute();
 	}
 
-	function fetch($sql){                //查询单条数据结果
+public	function fetch($sql){                //查询单条数据结果
 		$this->query($sql); 
 		$res=$this->result->fetch(PDO::FETCH_ASSOC); 
 		return $res;
 	}
-	function fetch_all($sql){           //查询多条数据结果
+public	function fetch_all($sql){           //查询多条数据结果
 		$this->query($sql);
 		$res=$this->result->fetchAll(PDO::FETCH_ASSOC);
 		return $res;
 	}
-	function exec($sql){
-		$this->connect();
+public	function exec($sql){               //增删改查，并返回受影响的行数;
+		$this->connect();                
 		$res=$this->pdo->exec($sql);
 		return $res;
 	}
+public 	function select($sql){
+	    $this->query($sql);
+	    $rowcount=$this->result->rowCount();
+	    return $rowcount;
+} 
 }
 $db=new db('localhost','root',"",'db_business','mysql');
 ?>

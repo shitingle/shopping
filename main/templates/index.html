@@ -5,27 +5,30 @@
 <title>Insert title here</title>
 </head>
 <body>
-<table width="850" border="1" cellspacing="0" cellpadding="0">
+<center>
+<table width="1200" border="0" cellspacing="0" cellpadding="0">
 <tr>
 <td colspan="2">{include file="top.html"}
 </td>
 </tr>
 <tr>
-<td width="216" align="left" valign="top">
+<td width="250" align="left" valign="top">
 {include file="login.html"}
 {include file="public.html"}
 {include file="links.html"}
 </td>
-<td width="634" height="700" align="center" valign="top">
-{$hello}
+<td width="950" height="700" align="center" valign="top">
+{include file="$admin_phtml"}
 </td>
 </tr></table>
 
 
-<table width="850" border="1" cellspacing="0" cellpadding="0">
-<tr><td>{include file="button.html"}</td>
-<td>{$hello}</td></tr>
+<table width="850" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td>{include file="button.html"}</td></tr>
 
 </table>
+
+</center>
 </body>
 </html>

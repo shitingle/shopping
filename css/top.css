@@ -1,17 +1,17 @@
 @CHARSET "UTF-8";
-ul{height:60px}
-li {width: 80px;
+ul#nav{height:60px}
+ul#nav li {width: 80px;
 	height: 20px;
 	float: left;
 	list-style: none;
 	padding-left: 50px;
     border-right:1px solid black;}
-li a{width: 80px;
+ul#nav li a{width: 80px;
 	height: 20px;
 	display: block;
 	background:white;
     
 	}		
-li  a:link{text-decoration: none;color: black}	
-li  a:visited{text-decoration: none;color: black}
-li  a:hover{text-decoration:underline;color:black};
+ul#nav li  a:link{text-decoration: none;color: black}	
+ul#nav li  a:visited{text-decoration: none;color: black}
+ul#nav li  a:hover{text-decoration:underline;color:black};

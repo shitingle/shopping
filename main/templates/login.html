@@ -6,6 +6,7 @@
 </head>
 <script src="js/login.js"></script>
 <body>
+<form action="checkpwd.php" method="GET" onsubmit="return check()">
 <div id="check" style="border:2px">
 <div>用户登陆</div>
 <div>用户名:<input type="text" name="uname" id="uname" onblur="checkuname()"></div>
@@ -16,8 +17,16 @@
 <div><label id="tverify">&nbsp</label></div>
 <div><img src="velcode.php" onclick="show()" id="myimg">
 <a href="javascript:void(0)" onclick="show()">换一张</a></div>
+<!-- 
 <div><a href="javascript:void(0)" onclick="check()">登陆</a><a href="register.php">注册</a></div>
+ -->
+ <div><label id="checkuser"></label></div>
+ <div>
+<input type="submit" value="提交" >
+ 
+ <a href="register.php">注册</a></div>
 </div>
+</form>
 <script>
 function show(){
 	document.getElementById("myimg").src="velcode.php";

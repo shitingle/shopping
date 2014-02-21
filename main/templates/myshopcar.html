@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script src="js/myshopcar.js"></script>
+我的购物车
+<form id="myshopcar" name="myshopcar" method="post" action="">
+<table width="850" height="179" >
+  <tr>
+    <th width="173" scope="col" colspan="2">商品名称</th>
+    <th width="88" scope="col">购买数量</th>
+    <th width="109" scope="col">市场价格</th>
+    <th width="123" scope="col">会员价格</th>
+    <th width="95" scope="col">折扣率</th>
+    <th width="135" scope="col">合计</th>
+  </tr>
+  {foreach key=key item=item from=$commar}
+  <tr>
+  <td><input id="chk" name="chk[]" type="checkbox" value="{$item.id}"></td>
+  <td><div>&nbsp;{$item.name}</div></td>
+  <td align="center"><input id="cnum{$key}" name="cnum{$key}" type="text" class="shorttxt" value="{$item.num}"
+  onkeyup="cvp({$key}),{}"></td>
+  <td height="25" align="center"  class="center">
+  <div id="m_price{$key}">&nbsp;{$item.m_price}</div></td>
+  <td height="25" align="center"  class="center">
+  <div>&nbsp;{$item.v_price}</div></td>
+  <td height="25" align="center"  class="center">
+  <div>&nbsp;{$item.fold}</div></td>
+  <td height="25" align="center" class="right">
+  <div>&nbsp;{$item.total}</div></td></tr>
+  {/foreach}
+  <tr>
+  <td height="25" colspan="3" align="left">
+  <a href="javascript:void(0)" onclick="return alldel();">全选</a>
+  <a href="javascript:void(0)" onclick="return overdel();">反选</a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="button" value="删除选择" onclick="del();">&nbsp&nbsp</td>
+  <td height="25" align="center"><input id="cont" name="cont" value="继续购物" type="button"
+  onclick="return del(myshopcar)"></td>
+  <td><input id="uid" name="uid" type="hidden" value="{$smarty.session.member}">
+  <input id="settle" name="settle" type="button" class="btn" value="去收银台" onclick="return formset(form)"></td>
+  <td height="25" colspan="2" align="right"><div id="sum">共计:{$sum}&nbsp;元</div></td></tr>
+</table>
+</form>
+
+</body>
+</html>
