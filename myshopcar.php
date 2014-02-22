@@ -2,7 +2,6 @@
 require_once 'system.smarty.inc.php';
 require_once 'comm/opmysql.php';
 session_start();
-echo $_SESSION['member'];
 $sql="select id,shopping from tb_user where name='{$_SESSION['member']}'";
 $num=$db->fetch_all($sql);
 if(empty($num)){

@@ -1,0 +1,105 @@
+@CHARSET "UTF-8";
+*{
+	font-family: '微软雅黑';
+}
+a{
+	color: #005aa0;
+}
+body{
+	background-color: #f1f1f1;
+}
+#nav{
+	background: url('../image/nav-bak.png');
+	background-repeat: repeat-x;
+	height: 40px;
+}
+#check,#notice,#links{
+	border:1px solid pink;
+	border-radius: 5px 5px 0px 0px;
+
+}
+.login-title,.notice-title,.link-title{
+	height: 25px;
+	background-color: pink;
+	border-radius: 5px 5px 0px 0px;
+	margin-bottom: 4px;
+}
+#check .login-form{
+	padding: 4px;
+}
+.notice-content,.link-content{
+	padding: 4px;
+}
+#check span{
+	font-size: 11px;
+}
+#notice{
+	margin-top: 10px;
+	padding-bottom: 20px;
+}
+#notice a{
+	display: block;
+	padding-bottom: 5px;
+	text-decoration: none;
+}
+#notice a:hover{
+	text-decoration: underline;
+}
+#links{
+	margin-top: 10px;
+}
+.copy{
+	padding-top: 5px;
+}
+#cav ul{
+	padding: 0;
+	margin: 0;
+}
+.user_info{
+	border:1px solid pink;
+	border-radius: 5px 5px 0px 0px;
+	padding: 4px;
+	font-size: 16px;
+}
+.info_content{
+	font-size: 14px;
+	
+}
+.info_content a{
+	padding-top: 10px;
+	display: block;
+	text-decoration: none;
+}
+.info_content a:hover{
+	text-decoration: underline;
+}
+#myshopcar{
+	margin-top: 10px;}
+#myshopcar table{
+	border:1px solid pink;
+	padding:10px;
+}
+#myshopcar table td{
+	
+	border:1px solid pink;
+	padding: 0px;
+}
+#myshopcar a{
+	text-decoration: none;
+}
+#myshopcar a:hover{
+	text-decoration: underline;
+}
+table#allnom{
+	border:1px solid pink;
+}
+#allnom table{
+	border:1px solid pink;
+}
+
+#allnom table td{
+	border:1px solid pink;
+}
+.pages a{
+	color: #000;
+}

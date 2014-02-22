@@ -58,9 +58,22 @@ function checkverify(){
 }
 
 function check(){
+	var a=ajax_pub();
+	console.log(a);
+	if(a==3){
+		document.getElementById("checkuser").innerHTML="密码错误";
+		return false;
+	}
+	else{	
+		return true;	
+	}	
+}
+
+
+function ajax_pub(){
 	var pwd=document.getElementById("upwd").value;
 	var uname=document.getElementById("uname").value;
-	
+	var sign=0;
 	if(pwd!=''){
 		var url="http://localhost/shopping/checkpwd.php?uname="+uname+"&pwd="+pwd;
 		var xmlhttp;
@@ -72,24 +85,9 @@ function check(){
 		  {// code for IE6, IE5
 		  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
 		  }
-		xmlhttp.onreadystatechange=function()
-		  {
-		  if (xmlhttp.readyState==4 && xmlhttp.status==200)
-		    {
-		    var msg=xmlhttp.responseText;
-		    if(msg==1){
-		    	document.getElementById("checkuser").innerHTML="密码错误";
-		    }else{
-		    	 document.getElementById("check").innerHTML=xmlhttp.responseText;
-		    }
-		    }
-		  }
-		xmlhttp.open("GET",url,true);
-		xmlhttp.send();
-		return false;
-	}else{
-		return false;	
+		
+		xmlhttp.open("GET",url,false);
+		xmlhttp.send(null);
+		return xmlhttp.responseText;
 	}
-	
-	
 }

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2014-02-20 15:15:04
+<?php /* Smarty version Smarty-3.1.16, created on 2014-02-22 09:28:40
          compiled from "main\templates\newhot.html" */ ?>
 <?php /*%%SmartyHeaderCode:2325253061bf8cbd4e9-36480719%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '6c3e73d4bcd04bebfc706c373eee031b039e6867' => 
     array (
       0 => 'main\\templates\\newhot.html',
-      1 => 1392906373,
+      1 => 1393061303,
       2 => 'file',
     ),
   ),
@@ -15,13 +15,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.16',
+  'unifunc' => 'content_53061bf8d03b78_19968557',
   'variables' => 
   array (
     'count' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.16',
-  'unifunc' => 'content_53061bf8d03b78_19968557',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_53061bf8d03b78_19968557')) {function content_53061bf8d03b78_19968557($_smarty_tpl) {?><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -53,7 +53,7 @@ li.product_list{
 <body>
 
 <div id="page_count"></div><div class="clear"></div>
-<div>
+<div class="pages">
 页数：<label id="page_f">1</label>/<label id="page_t"><?php echo $_smarty_tpl->tpl_vars['count']->value;?>
 </label>&nbsp&nbsp&nbsp&nbsp
 <a href="javascript:void(0);" onclick="ajax(0)">首页</a>&nbsp&nbsp

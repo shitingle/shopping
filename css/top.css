@@ -1,17 +1,30 @@
 @CHARSET "UTF-8";
-ul#nav{height:60px}
-ul#nav li {width: 80px;
-	height: 20px;
+ul#nav{height:40px;
+	padding-top: 10px;
+}
+ul#nav li {
 	float: left;
 	list-style: none;
-	padding-left: 50px;
-    border-right:1px solid black;}
-ul#nav li a{width: 80px;
-	height: 20px;
-	display: block;
-	background:white;
-    
-	}		
+	padding-left: 50px;}
+ul#nav li a{
+    color: #fff;
+    text-decoration: none;
+	}
+ul#nav li a:hover{
+	text-decoration: underline;
+	color: yellow;
+}
+/*		
 ul#nav li  a:link{text-decoration: none;color: black}	
 ul#nav li  a:visited{text-decoration: none;color: black}
 ul#nav li  a:hover{text-decoration:underline;color:black};
+*/
+
+
+ul#cav li{width: 80px;
+	float: left;
+	list-style: none;
+	padding-left: 50px;}
+ul#cav li  a:link{text-decoration: none;color: black}	
+ul#cav li  a:visited{text-decoration: none;color: black}
+ul#cav li  a:hover{text-decoration:underline;color:black};

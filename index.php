@@ -2,12 +2,19 @@
 header("Content-type:text/html;charset=UTF-8");
 require_once 'comm/opmysql.php';
 require_once 'system.smarty.inc.php';
+session_start();
 if(isset($_GET['page'])){
 	$page=$_GET['page'];
 }else{
 	$page="";
 }
-var_dump($page);
+if($_SESSION['member']){
+	include_once 'logged.php';
+	$smarty->assign("login","logged.html");
+}else{
+	include_once 'login.php';
+	$smarty->assign("login","login.html");
+}
 switch($page){
 	case "hyzx":
 		$smarty->assign("admin_phtml","member.html");
@@ -16,6 +23,7 @@ switch($page){
     	$smarty->assign("admin_phtml","allpub.html");
     	break;
     case "nom":
+    	include_once 'allnom.php';
     	$smarty->assign("admin_phtml","allnom.html");
     	break;
     case "new":

@@ -27,6 +27,7 @@ foreach ($num as $num){
 			<div class='price'>
 			".$arr['m_price']."
 			</div>
-		   <div><a href='javascript:void(0)' onclick='shopcar({$arr[id]})'>加入购物车</a>&nbsp&nbsp<a href='#'>查看详细信息</a></div>
+		   <div><a href='javascript:void(0)' onclick='shopcar({$arr[id]})'>加入购物车</a>&nbsp&nbsp
+		   <a href='http://localhost/shopping/index.php?num={$arr[id]}&page=nom'>查看详细信息</a></div>
 			</li>";}
 	 echo "</ul><div class='clear'></div>";
