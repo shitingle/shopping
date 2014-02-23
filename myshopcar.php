@@ -5,7 +5,7 @@ session_start();
 $sql="select id,shopping from tb_user where name='{$_SESSION['member']}'";
 $num=$db->fetch_all($sql);
 if(empty($num)){
-	echo "<script>alert('购物车中暂时没有商品');window.location.href='http://localhost/shopping/index.php';</script>";
+	echo "<script>alert('购物车中暂时没有商品');window.location.href='index.php';</script>";
 }
 $commar=array();
 foreach ($num[0] as $value){

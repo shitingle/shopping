@@ -21,7 +21,7 @@ function checkuname(){
 	    document.getElementById("tname").innerHTML=xmlhttp.responseText;
 	    }
 	  }
-	xmlhttp.open("GET","http://localhost/shopping/rc_name.php?name="+uname,true);
+	xmlhttp.open("GET","rc_name.php?name="+uname,true);
 	xmlhttp.send();
 }
 }
@@ -36,7 +36,7 @@ function checkpwd(){
 
 function checkverify(){
 	var rgcode=document.getElementById("verify").value;
-    var  url="http://localhost/shopping/rc_velcode.php?code="+rgcode;
+    var  url="rc_velcode.php?code="+rgcode;
     var xmlhttp;
 	if (window.XMLHttpRequest)
 	  {// code for IE7+, Firefox, Chrome, Opera, Safari
@@ -75,7 +75,7 @@ function ajax_pub(){
 	var uname=document.getElementById("uname").value;
 	var sign=0;
 	if(pwd!=''){
-		var url="http://localhost/shopping/checkpwd.php?uname="+uname+"&pwd="+pwd;
+		var url="checkpwd.php?uname="+uname+"&pwd="+pwd;
 		var xmlhttp;
 		if (window.XMLHttpRequest)
 		  {// code for IE7+, Firefox, Chrome, Opera, Safari

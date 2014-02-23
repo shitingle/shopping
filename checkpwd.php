@@ -11,7 +11,7 @@ $num=$db->fetch($sql);
 if($num!=""){
 	$_SESSION['member']=$name;
 	$member=$_SESSION['member'];
-	header('Location: http://localhost/shopping/index.php');
+	header('Location: index.php');
 }else{
 	echo 3;
 }

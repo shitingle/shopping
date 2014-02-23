@@ -1,34 +1,34 @@
-function ajax(name){
+function allnew(name){
 	var f=document.getElementById("page_t").innerHTML;
 	var e=parseInt(f);
 	var value=parseInt(name);
-	var url=1;
+	 var na=1;
 	if(!value&&value==null){
-		i=1;
-		url=i;
+		j=1;
+	var na=i;
 	}else if(value==0){
-		i=1;
-	    url=i;	
+		j=1;
+	 var na=j;	
 	}else if(value==-1){
-		if(i-1<=0){
-			url=1;
+		if(j-1<=0){
+		var	na=1;
 		}else{
-			i=i+value;
-			url=i;
+			j=j+value;
+		var	na=j;
 		}
 	}else if(value==1){
-		if(i+1<e){
-		i=i+value;
-		url=i;
+		if(j+1<e){
+		j=j+value;
+	var	na=j;
 		}else{
-		i=e;
-		url=i;	
+		j=e;
+	var	na=j;	
 		}
 	}else{
-		i=value;
-		url=i;
+		j=value;
+	var	na=j;
 	}
-	document.getElementById("page_f").innerHTML=i;
+	document.getElementById("page_f").innerHTML=j;
 	
 	var xmlhttp;
 	if (window.XMLHttpRequest)
@@ -46,6 +46,6 @@ function ajax(name){
 	    document.getElementById("page_count").innerHTML=xmlhttp.responseText;
 	    }
 	  }
-	xmlhttp.open("GET","newhot_page.php?page="+url,true);
+	xmlhttp.open("GET","allnew_page.php?page="+na,true);
 	xmlhttp.send();
 }

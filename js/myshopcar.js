@@ -29,7 +29,7 @@ function del(){
 	if(rd==''){
 		alert("请选择要删除的数据");
 	}else{
-		var url="http://localhost/shopping/delshop.php?rd="+rd;
+		var url="delshop.php?rd="+rd;
 		var xmlhttp;
 		if (window.XMLHttpRequest)
 		  {
@@ -48,7 +48,7 @@ function del(){
 		    	 alert("删除失败");
 		     }else{
 		    	 alert("删除成功");
-		    	 location="http://localhost/shopping/index.php?page=shopcar";
+		    	 location="index.php?page=shopcar";
 		     }
 		    }
 		  }

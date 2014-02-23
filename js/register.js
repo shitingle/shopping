@@ -3,7 +3,7 @@ function ckname(){
 	if(uname==""){
 		document.getElementById("rgname").innerHTML="<span style='color:red'>用户名不能为空</span>";
 	}else{
-		url="http://localhost/shopping/rc_uname.php?uname="+uname;
+		url="rc_uname.php?uname="+uname;
 		ajax(url,"rgname");
 	}
 }

@@ -27,9 +27,11 @@ switch($page){
     	$smarty->assign("admin_phtml","allnom.html");
     	break;
     case "new":
+    	include_once 'allnew.php';
     	$smarty->assign("admin_phtml","allnew.html");
     	break;
     case "hot":
+    	include_once 'allhot.php';
     	$smarty->assign("admin_phtml","allhot.html");
     	break;
     case "shopcar":
@@ -37,6 +39,7 @@ switch($page){
     	$smarty->assign("admin_phtml","myshopcar.html");
     	break;
     case "settle":
+    	include_once 'settle.php';
     	$smarty->assign("admin_phtml","settle.html");
     	break;
     case "queryform":

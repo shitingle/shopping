@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2014-02-22 09:30:26
+<?php /* Smarty version Smarty-3.1.16, created on 2014-02-23 13:46:48
          compiled from "main\templates\top.html" */ ?>
 <?php /*%%SmartyHeaderCode:925653061bf8ac8214-42497676%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '8623be2d02207825c47c5fcf13bf97833481abee' => 
     array (
       0 => 'main\\templates\\top.html',
-      1 => 1393061425,
+      1 => 1393163206,
       2 => 'file',
     ),
   ),
@@ -33,10 +33,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <img src="image/logo.png">
 </h2>
 <ul id='nav'>
-<li><a href="http://localhost/shopping/index.php">首页</a></li>
-<li><a href="#">最新商品</a></li>
-<li><a href="#">推荐商品</a></li>
-<li><a href="#">热门商品</a></li>
+<li><a href="index.php">首页</a></li>
+<li><a href="index.php?page=new">最新商品</a></li>
+<li><a href="index.php?page=settle">推荐商品</a></li>
+<li><a href="index.php?page=hot">热门商品</a></li>
 <li><a href="#">订单查询</a></li></ul>
 </body>
 </html><?php }} ?>

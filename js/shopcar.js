@@ -1,5 +1,5 @@
 function shopcar(key){
-	var url="http://localhost/shopping/chklogin.php?mid="+key;
+	var url="chklogin.php?mid="+key;
 	var xmlhttp;
 	if (window.XMLHttpRequest)
 	  {// code for IE7+, Firefox, Chrome, Opera, Safari
@@ -19,7 +19,7 @@ function shopcar(key){
 	    else if(msg=='3'){alert('该商品已添加');
 	    return false}
 	    else{
-	    location='http://localhost/shopping/index.php?page=shopcar'}
+	    location='index.php?page=shopcar'}
 	    }
 	  }
 	xmlhttp.open("GET",url,true);

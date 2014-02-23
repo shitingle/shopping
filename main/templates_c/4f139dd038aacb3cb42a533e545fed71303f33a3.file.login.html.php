@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2014-02-22 08:04:56
+<?php /* Smarty version Smarty-3.1.16, created on 2014-02-23 12:23:15
          compiled from "main\templates\login.html" */ ?>
 <?php /*%%SmartyHeaderCode:1772953061bf8b8dd82-60154247%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '4f139dd038aacb3cb42a533e545fed71303f33a3' => 
     array (
       0 => 'main\\templates\\login.html',
-      1 => 1393056286,
+      1 => 1393157938,
       2 => 'file',
     ),
   ),
@@ -42,7 +42,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <a href="javascript:void(0)" onclick="show()">换一张</a></div>
  <div><label id="checkuser"></label></div>
  <div>
-<a href="http://localhost/shopping/index.php"  onclick="return check()">提交</a>
+<a href="index.php"  onclick="return check()">提交</a>
  <a href="register.php">注册</a></div>
 </div>
 </div>
